@@ -1,19 +1,21 @@
+import { useState } from 'react'
 import './Navbar.scss'
-import {BiPhone} from 'react-icons/bi'
-import {GrMail} from 'react-icons/gr'
+import { BiPhone } from 'react-icons/bi'
+import { GrMail } from 'react-icons/gr'
 import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
-  const {pathname} = useLocation();
+  const [nav, setNav] = useState(false);
+  const { pathname } = useLocation();
   return (
     <div className='nav'>
       <div className="nav-up">
         <div className="nav-call">
-          <BiPhone/>
+          <BiPhone />
           <span>02-55014178</span>
         </div>
         <div className="nav-mail">
-          <GrMail/>
+          <GrMail />
           <span>aaassociates49@gmail.com</span>
         </div>
       </div>
@@ -21,7 +23,7 @@ const Navbar = () => {
         <div className="nav-logo">
           <img src="/ahmed.png" alt="" />
         </div>
-        <ul>
+        <ul style={{transform: `${nav ? 'translateX(0)' : ''}`}} onClick={() => setNav(p=> !p)}>
           <Link to='/' className={`link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
           <Link to='/about' className={`link ${pathname === '/about' ? 'active' : ''}`}>About-Us</Link>
           <Link to='' className='link '>Practice-Areas</Link>
@@ -29,6 +31,13 @@ const Navbar = () => {
           <Link to='' className='link '>Career</Link>
           <Link to='' className='link '>Contact</Link>
         </ul>
+        <div className="nav-btn">
+          <div className={`nav-btn-line ${nav ? 'active' : ''}`} onClick={() => setNav(p=> !p)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
     </div>
   )

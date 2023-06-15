@@ -3,5 +3,11 @@
 .footer {
   @include container;
   @include flex();
-  padding: 2rem 0;
+  padding: 2rem 1rem;
+  span{
+    @include tablet{
+      padding: 0 0;
+      text-align: center;
+    }
+  }
 }
