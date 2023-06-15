@@ -1,0 +1,35 @@
+@import '../../global.scss';
+
+.home-sec{
+  @include container;
+  @include flex();
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  gap: 100px;
+  .left{
+    flex: 2;
+    color: $color-dark;
+    h1{
+      font-size: 3.1rem;
+      color: $color-dark-blue;
+      line-height: 55px;
+      margin-bottom: 1.5rem;
+    }
+    p{
+      margin-bottom: 1rem;
+
+    }
+    .home-btn{
+      background-color: $color-dark-blue;
+      color: #fff;
+      padding: 10px 40px;
+      border-radius: 50px;
+    }
+  }
+  .right{
+    flex: 1;
+    img{
+      width: 500px;
+    }
+  }
+}

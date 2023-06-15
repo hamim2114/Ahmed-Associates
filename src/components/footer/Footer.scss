@@ -1,0 +1,7 @@
+@import '../../global.scss';
+
+.footer {
+  @include container;
+  @include flex();
+  padding: 2rem 0;
+}

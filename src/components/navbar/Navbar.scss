@@ -1,0 +1,36 @@
+@import '../../global.scss';
+
+.nav{
+  @include container;
+  color: $color-dark;
+  &-up{
+    margin-top: 10px;
+    @include flex(center, flex-end);
+    gap: 40px;
+    .nav-call{
+      @include flex();
+      gap: 8px;
+    }
+    .nav-mail{
+      @include flex();
+      gap: 8px;
+    }
+  }
+  &-down{
+    @include flex(center, space-between);
+    .nav-logo{
+      img{width: 250px;}
+    }
+    ul {
+      @include flex();
+      gap: 30px;
+      font-weight: 500;
+      font-size: 1.2rem;
+      .link{
+        &.active{
+          border-bottom: 2px solid $color-dark;
+        }
+      }
+    }
+  }
+}

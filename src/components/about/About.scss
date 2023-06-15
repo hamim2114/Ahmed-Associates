@@ -1,0 +1,47 @@
+@import '../../global.scss';
+
+.about-main {
+  margin-top: 2rem;
+  .about {
+    // flex-direction: column;
+    .slider-main{
+      @include container;
+      @include flex();
+      background-color: #000000e1;
+      .slider {
+        width: 70%;
+        .slider-img{
+          img{
+            width: 100%;
+            height: 530px;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+    .about-txt {
+      @include container;
+      @include flex();
+      flex-direction: column;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      h1{
+        @include font-lora;
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+      }
+      p{
+        max-width: 800px;
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+      .about-btn{
+        background-color: $color-dark-blue;
+        color: #fff;
+        padding: 10px 40px;
+        border-radius: 50px;
+      }
+    }
+  }
+}

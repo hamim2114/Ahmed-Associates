@@ -1,0 +1,36 @@
+@import './global.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  font-family: 'Poppins', sans-serif;
+}
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+img{
+  width: 100%;
+}
+.link{
+  text-decoration: none;
+  color: $color-dark;
+  transition: .5s ease;
+  &:hover{
+    color: $color-blue;
+    transform: translateY(3px);
+  }
+}
