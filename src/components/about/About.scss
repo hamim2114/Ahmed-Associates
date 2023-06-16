@@ -9,7 +9,7 @@
     .slider-main {
       @include container;
       @include flex();
-      background-color: #000000e1;
+      // background-color: rgb(231, 231, 231);
       .slider {
         width: 70%;
         @include tablet{
@@ -35,13 +35,14 @@
       margin-top: 3rem;
       margin-bottom: 2rem;
       @include tablet{
-        margin-top: 1.5rem;
+        // margin-top: 1.5rem;
     
       }
       h1 {
-        @include font-lora;
+        @include font-play-fair;
         margin-bottom: 1.5rem;
-        font-size: 3rem;
+        font-size: 2.2rem;
+        color: $color-dark-blue;
         @include tablet{
           font-size: 2.5rem;
           margin-bottom: .5rem;

@@ -1,0 +1,18 @@
+@import '../../global.scss';
+
+.review{
+  @include container;
+  @include flex();
+  flex-direction: column;
+  margin-bottom: 4rem;
+  h1{
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    @include font-play-fair;
+    font-size: 2.2rem;
+    color: $color-dark-blue;
+  }
+  .slider{
+    max-width: 700px;
+  }
+}

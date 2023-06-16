@@ -1,0 +1,29 @@
+@import '../global.scss';
+
+.blog-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-light-gray;
+  padding-bottom: 3rem;
+  h1 {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    @include font-play-fair;
+    color: $color-dark-blue;
+  }
+  .blog-data {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+  .more-btn {
+    @include flex();
+    gap: 5px;
+    color: $color-blue;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}

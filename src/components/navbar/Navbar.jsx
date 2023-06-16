@@ -25,9 +25,10 @@ const Navbar = () => {
         </div>
         <ul style={{transform: `${nav ? 'translateX(0)' : ''}`}} onClick={() => setNav(p=> !p)}>
           <Link to='/' className={`link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
-          <Link to='/about' className={`link ${pathname === '/about' ? 'active' : ''}`}>About-Us</Link>
-          <Link to='' className='link '>Practice-Areas</Link>
-          <Link to='' className='link '>Our-Team</Link>
+          <Link to='/about' className={`link ${pathname === '/about' ? 'active' : ''}`}>About Us</Link>
+          <Link to='/practice-areas' className={`link ${pathname === '/practice-areas' ? 'active' : ''}`}>Practice Areas</Link>
+          <Link to='' className='link '>Our Team</Link>
+          <Link to='/blog' className={`link ${pathname === '/blog' ? 'active' : ''}`}>Blog</Link>
           <Link to='' className='link '>Career</Link>
           <Link to='' className='link '>Contact</Link>
         </ul>
