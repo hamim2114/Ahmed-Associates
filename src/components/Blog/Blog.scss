@@ -1,8 +1,20 @@
 @import '../../global.scss';
 
 .blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 350px;
   height: 410px;
+  padding: 10px;
+  @include tablet {
+    width: 300px;
+    height: 350px;
+  }
+  @include mobile {
+    width: 180px;
+    height: 240px;
+  }
   .blog-img {
     overflow: hidden;
     img {
@@ -10,6 +22,12 @@
       width: 100%;
       height: 250px;
       object-fit: cover;
+      @include tablet {
+        height: 200px;
+      }
+      @include mobile {
+        height: 100px;
+      }
       &:hover {
         transform: scale(1.1);
         filter: hue-rotate(20deg);
@@ -18,21 +36,43 @@
   }
   .title {
     font-size: 1.6rem;
+    text-align: center;
     @include font-play-fair;
     font-weight: bold;
     padding: 15px 20px;
+    @include tablet {
+      font-size: 1.2rem;
+      padding: 5px 20px;
+    }
+    @include mobile {
+      font-size: 1rem;
+      padding: 5px 20px;
+    }
   }
   .user {
     @include flex();
     gap: 15px;
+    @include mobile {
+      gap: 7px;
+    }
     img {
       width: 40px;
       height: 40px;
       border-radius: 50%;
+      @include mobile {
+        width: 30px;
+        height: 30px;
+      }
     }
     .name {
+      @include mobile {
+        font-size: 12px;
+      }
     }
     .date {
+      @include mobile {
+        font-size: 10px;
+      }
     }
   }
 }

@@ -6,6 +6,7 @@
   align-items: center;
   background-color: $color-light-gray;
   padding-bottom: 3rem;
+  position: relative;
   h1 {
     padding-top: 4rem;
     padding-bottom: 3rem;
@@ -18,6 +19,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
+    @include mobile {
+      column-gap: 0px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row: 1/3;
+    }
   }
   .more-btn {
     @include flex();
@@ -25,5 +31,10 @@
     color: $color-blue;
     font-weight: bold;
     font-size: 16px;
+    @include mobile {
+      position: absolute;
+      right: 4rem;
+      bottom: 14rem;
+    }
   }
 }

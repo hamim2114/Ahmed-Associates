@@ -36,13 +36,15 @@ const Reviews = () => {
     arrows: false
   };
   return (
-    <div className="review">
-      <h1>Client Testimonials</h1>
-      <Slider {...settings} className="slider">
-        {reviewData.map((review, i) => (
-          <SliderContent review={review} key={i} />
-        ))}
-      </Slider>
+    <div className="review-main">
+      <div className="review">
+        <h1>Client Testimonials</h1>
+        <Slider {...settings} className="slider">
+          {reviewData.map((review, i) => (
+            <SliderContent review={review} key={i} />
+          ))}
+        </Slider>
+      </div>
     </div>
   )
 }
