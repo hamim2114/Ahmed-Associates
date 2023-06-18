@@ -21,7 +21,9 @@
       }
       p{
         color: gray;
-        
+        @include mobile {
+          font-size: 13px;
+        }
       }
     }
     .bottom{
@@ -81,11 +83,15 @@
           @include font-play-fair;
           font-size: 2.3rem;
           @include mobile{
-            font-size: 1.6rem;
+            font-size: 1.4rem;
+            margin-bottom: 7px;
           }
         }
         p{
           color: gray;
+          @include mobile {
+            font-size: 13px;
+          }
         }
       }
     }
