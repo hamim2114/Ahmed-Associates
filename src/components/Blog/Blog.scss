@@ -66,10 +66,11 @@
     }
     .name {
       @include mobile {
-        font-size: 12px;
+      font-size: 12px;
       }
     }
     .date {
+      color: gray;
       @include mobile {
         font-size: 10px;
       }

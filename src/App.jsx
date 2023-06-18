@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage';
 import PracticeAreasPage from './pages/practiceAreasPage';
 import BlogPage from './pages/BlogPage';
+import TeamPage from './pages/TeamPage';
 
 function App() {
   const Layout = () => {
@@ -37,6 +38,10 @@ function App() {
         {
           path: '/blog',
           element: <BlogPage/>
+        },
+        {
+          path: '/team',
+          element: <TeamPage/>
         },
       ]
     }
