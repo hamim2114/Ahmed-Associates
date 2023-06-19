@@ -7,7 +7,7 @@ import { Link, useLocation } from 'react-router-dom'
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const { pathname } = useLocation();
-  const navMenu = useRef();
+  const navMenu = useRef();Link
   const closeOpenMenus = (e) => {
     if (navMenu.current && nav && !navMenu.current.contains(e.target)) {
       setNav(false);
@@ -27,9 +27,9 @@ document.addEventListener("mousedown", closeOpenMenus);
         </div>
       </div>
       <div className="nav-down">
-        <div className="nav-logo">
+        <Link className="nav-logo">
           <img src="/ahmed.png" alt="" />
-        </div>
+        </Link>
         <ul ref={navMenu} style={{transform: `${nav ? 'translateX(0)' : ''}`}} onClick={() => setNav(p=> !p)}>
           <Link to='/' className={`link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
           <Link to='/about' className={`link ${pathname === '/about' ? 'active' : ''}`}>About Us</Link>
