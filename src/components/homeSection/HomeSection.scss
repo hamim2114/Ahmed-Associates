@@ -31,12 +31,15 @@
     }
     .home-btn{
       background-color: $color-blue;
-      color: #fff;
       padding: 10px 40px;
       border-radius: 50px;
       position: relative;
       overflow: hidden;
       z-index: 6;
+      .home-link{
+        color: #fff;
+        text-decoration: none;
+      }
       &::before{
         content: '';
         position: absolute;

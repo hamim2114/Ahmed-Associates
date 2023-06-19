@@ -9,7 +9,7 @@
     text-align: center;
     margin-bottom: 3rem;
     @include font-play-fair;
-    font-size: 3rem;
+    font-size: 2.6rem;
     color: $color-dark-blue;
     display: flex;
     flex-direction: column;
@@ -18,8 +18,7 @@
       width: 200px;
       margin-top: 1rem;
       height: 3px;
-      background-color: $color-dark;
-      opacity: 0.5;
+      background-color: $color-yellow;
     }
   }
   .container{

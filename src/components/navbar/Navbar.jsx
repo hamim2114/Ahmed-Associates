@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import './Navbar.scss'
 import { BiPhone } from 'react-icons/bi'
 import { GrMail } from 'react-icons/gr'
@@ -7,6 +7,13 @@ import { Link, useLocation } from 'react-router-dom'
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const { pathname } = useLocation();
+  const navMenu = useRef();
+  const closeOpenMenus = (e) => {
+    if (navMenu.current && nav && !navMenu.current.contains(e.target)) {
+      setNav(false);
+    }
+  };
+document.addEventListener("mousedown", closeOpenMenus);
   return (
     <div className='nav'>
       <div className="nav-up">
@@ -23,14 +30,14 @@ const Navbar = () => {
         <div className="nav-logo">
           <img src="/ahmed.png" alt="" />
         </div>
-        <ul style={{transform: `${nav ? 'translateX(0)' : ''}`}} onClick={() => setNav(p=> !p)}>
+        <ul ref={navMenu} style={{transform: `${nav ? 'translateX(0)' : ''}`}} onClick={() => setNav(p=> !p)}>
           <Link to='/' className={`link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
           <Link to='/about' className={`link ${pathname === '/about' ? 'active' : ''}`}>About Us</Link>
           <Link to='/practice-areas' className={`link ${pathname === '/practice-areas' ? 'active' : ''}`}>Practice Areas</Link>
           <Link to='/team' className={`link ${pathname === '/team' ? 'active' : ''}`}>Our Team</Link>
           <Link to='/blog' className={`link ${pathname === '/blog' ? 'active' : ''}`}>Blog</Link>
-          <Link to='' className='link '>Career</Link>
-          <Link to='' className='link '>Contact</Link>
+          <Link to='/career' className={`link ${pathname === '/career' ? 'active' : ''}`}>Career</Link>
+          <Link to='/contact' className={`link ${pathname === '/contact' ? 'active' : ''}`}>Contact</Link>
         </ul>
         <div className="nav-btn">
           <div className={`nav-btn-line ${nav ? 'active' : ''}`} onClick={() => setNav(p=> !p)}>

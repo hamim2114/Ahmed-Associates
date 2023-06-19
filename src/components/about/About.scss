@@ -5,6 +5,9 @@
   @include tablet {
     margin-top: 4rem;
   }
+  @include mobile {
+    margin-top: 5rem;
+  }
   .about {
     .slider-main {
       @include container;
@@ -12,7 +15,7 @@
       // background-color: rgb(231, 231, 231);
       .slider {
         width: 70%;
-        @include tablet{
+        @include mobile{
           width: 93%;
         }
         .slider-img {
@@ -21,9 +24,10 @@
             height: 530px;
             object-fit: cover;
             object-position: center;
-            @include tablet{
+            @include mobile{
+              margin-top: 2rem;
               height: 250px;
-            }
+            };
           }
         }
       }
@@ -35,7 +39,7 @@
       margin-top: 3rem;
       margin-bottom: 2rem;
       @include tablet{
-        // margin-top: 1.5rem;
+        margin-top: 1.5rem;
     
       }
       h1 {
@@ -46,7 +50,6 @@
         @include tablet{
           font-size: 2.5rem;
           margin-bottom: .5rem;
-    
       }
       }
       p {
@@ -58,8 +61,11 @@
       .about-btn {
         border: 2px solid $color-dark-blue;
         color: $color-dark-blue;
-        padding: 10px 40px;
+        padding: 8px 40px;
         border-radius: 50px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
         transition: .3s;
         &:hover{
           background-color: $color-dark-blue;

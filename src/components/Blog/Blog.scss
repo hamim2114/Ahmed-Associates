@@ -13,7 +13,7 @@
   }
   @include mobile {
     width: 180px;
-    height: 240px;
+    height: 200px;
   }
   .blog-img {
     overflow: hidden;
@@ -45,8 +45,9 @@
       padding: 5px 20px;
     }
     @include mobile {
+      text-align: start;
       font-size: 1rem;
-      padding: 5px 20px;
+      padding: 5px 5px;
     }
   }
   .user {
