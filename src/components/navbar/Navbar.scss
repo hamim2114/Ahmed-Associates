@@ -45,6 +45,7 @@
       font-size: 1rem;
       transition: .5s ease;
       z-index: 99;
+      text-transform: uppercase;
       @include tablet {
         flex-direction: column;
         position: fixed;

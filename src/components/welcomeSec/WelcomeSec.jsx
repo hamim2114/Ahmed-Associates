@@ -4,7 +4,7 @@ const WelcomeSec = () => {
   return (
     <div className="welcome-sec">
       <div className="wrapper">
-        <h1>Welcome to Ahmed and Ahmed Associates - Providing Legal Help</h1>
+        <h1>Welcome to Ahmed and Ahmed Associates <br /> - Providing Legal Help</h1>
         <span>Experience . Reliability . Ethics</span>
         <hr />
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

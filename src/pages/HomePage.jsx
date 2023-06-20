@@ -6,12 +6,14 @@ import Reviews from '../components/reviews/Reviews'
 import { blogData } from '../data/blogData'
 import Blog from '../components/Blog/Blog'
 import { Link } from 'react-router-dom';
+import Achieve from '../components/achieve/Achieve';
 
 const HomePage = () => {
   return (
     <div>
       <HomeSection />
       <WelcomeSec />
+      <Achieve/>
       <Reviews />
       <div className="blog-sec">
         <h1>Some From Our Blog</h1>

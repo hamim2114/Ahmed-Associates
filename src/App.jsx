@@ -3,7 +3,9 @@ import { lazy, Suspense, useEffect } from 'react';
 import './App.scss'
 
 const Footer = lazy(() => import('./components/footer/Footer'));
-const Navbar = lazy(() => import('./components/navbar/Navbar'));
+import Navbar from './components/navbar/Navbar';
+import JobPage from './pages/JobPage';
+import JobSingle from './components/jobSingle/JobSingle';
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const PracticeAreasPage = lazy(() => import('./pages/practiceAreasPage'));
@@ -25,8 +27,8 @@ function App() {
     return (
       <>
         <ScrollToTop />
+        <Navbar />
         <Suspense fallback={<div className='loader'><img src="/Eclipse.svg" alt="" /></div>}>
-          <Navbar />
           <Outlet />
           <Footer />
         </Suspense>
@@ -66,6 +68,14 @@ function App() {
         {
           path: '/contact',
           element: <ContactPage />,
+        },
+        {
+          path: '/jobs',
+          element: <JobPage />,
+        },
+        {
+          path: '/jobs/:category',
+          element: <JobSingle />,
         },
       ],
     },

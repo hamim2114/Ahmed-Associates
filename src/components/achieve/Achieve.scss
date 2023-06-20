@@ -1,0 +1,69 @@
+@import '../../global.scss';
+
+.achieve{
+  @include container;
+  padding: 3.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  @include tablet {
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+  @include mobile {
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  .top{
+    h1{
+      text-align: center;
+      margin-bottom: 4rem;
+      color: $color-dark-blue;
+      @include font-play-fair;
+      font-size: 2.5rem;
+      @include tablet {
+        font-size: 2.1rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .bottom{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &-sec{
+      @include flex();
+      padding: 40px;
+      background-color: $color-light-gray;
+      @include tablet {
+        padding: 20px;
+      }
+      .icon{
+        font-size: 3rem;
+        margin-right: 20px;
+        color: $color-yellow
+      }
+      .desc{
+        h2{
+          @include font-play-fair;
+          font-size: 1.8rem;
+          margin-bottom: 5px;
+          @include tablet {
+            font-size: 1.4rem;
+          }
+        }
+        p{
+          font-size: 0.9rem;
+          color: gray;
+          @include tablet {
+            font-size: 0.8rem;
+      
+          }
+        }
+      }
+    }
+  }
+}

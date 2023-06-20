@@ -37,10 +37,10 @@ const Contact = () => {
       </div>
       <div className="right">
         <form action="">
-          <input type="text" className="name" placeholder='Your Name' required />
+          <input type="text" className="name" placeholder='Name' required />
           <div className="phn-email">
-            <input type="text" className="phone" placeholder='Your Phone' required />
-            <input type="text" className="email" placeholder='Your Email' required />
+            <input type="text" className="phone" placeholder='Phone' required />
+            <input type="text" className="email" placeholder='Email' required />
           </div>
           <select name="" required>
             <option value="" disabled selected>Select Case</option>

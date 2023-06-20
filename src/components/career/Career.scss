@@ -1,74 +1,158 @@
 @import '../../global.scss';
 
-.career{
-  @include container;
-  padding: 3.5rem;
-  margin-top: 2.5rem;
-  @include tablet {
-    padding: 2rem;
-    margin-top: 4rem;
-  }
-  .top{
-    h1{
-      @include flex();
-      flex-direction: column;
-      text-align: center;
-      margin-bottom: 4rem;
-      color: $color-dark-blue;
-      @include font-play-fair;
-      font-size: 2.5rem;
-      @include tablet {
-        font-size: 2.1rem;
-        margin-bottom: 2rem;
-      }
-      hr{
-        width: 300px;
-        height: 2.1px;
-        border: none;
-        background-color: $color-yellow;
-        text-align: center;
-        margin-top: 1rem;
-        @include tablet {
-          width: 200px;
-        }
-      }
-    }
-  }
-  .bottom{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.5rem;
-    row-gap: 1.5rem;
-    @include tablet {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    &-sec{
-      @include flex();
-      padding: 40px;
+.career {
+  .wrapper {
+    .intro {
       background-color: $color-light-gray;
-      @include tablet {
-        padding: 20px;
-      }
-      .icon{
-        font-size: 3rem;
-        margin-right: 20px;
-        color: $color-yellow
-      }
-      .desc{
-        h2{
+      .wrapper {
+        @include container;
+        @include flex();
+        flex-direction: column;
+        padding: 5rem 0;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        @include mobile {
+          margin-top: 3rem;
+        }
+        h1 {
           @include font-play-fair;
-          font-size: 1.8rem;
-          margin-bottom: 5px;
-          @include tablet {
-            font-size: 1.4rem;
+          font-size: 3rem;
+          max-width: 800px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 2rem;
+          color: $color-dark-blue;
+          @include mobile {
+            font-size: 2.5rem;
+          }
+          hr {
+            width: 300px;
+            height: 2.1px;
+            border: none;
+            background-color: $color-yellow;
+            margin-top: 1rem;
           }
         }
-        p{
-          font-size: 0.9rem;
+        p {
+          max-width: 600px;
+          text-align: center;
+          margin-bottom: 1rem;
           color: gray;
-          @include tablet {
-            font-size: 0.8rem;
-      
+        }
+        .apply-btn {
+          background-color: $color-blue;
+          padding: 15px 70px;
+          border-radius: 50px;
+          position: relative;
+          overflow: hidden;
+          z-index: 6;
+          font-weight: bold;
+          font-size: 1rem;
+          color: #fff;
+          text-decoration: none;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50px;
+            width: 0%;
+            height: 100%;
+            background-color: $color-yellow;
+            transition: all 0.3s ease;
+            z-index: -1;
+          }
+          &:hover::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .info {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      h1 {
+        text-align: center;
+        margin-bottom: .5rem;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $color-dark-blue;
+      }
+      p {
+        margin-bottom: 3rem;
+        color: gray;
+        @include mobile {
+          margin-bottom: 2.5rem; 
+        }
+      }
+    }
+  }
+}
+
+.career-contact-main {
+  background-color: $color-dark-blue;
+  // @include container;
+  .wrapper {
+    @include container;
+    @include flex();
+    padding: 5rem 1rem;
+    @include tablet {
+      flex-direction: column;
+      gap: 50px;
+    }
+    @include mobile {
+      padding: 3rem 1rem;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      flex: 1;
+      margin-right: 6rem;
+      h1 {
+        @include font-play-fair;
+        font-size: 2.4rem;
+        color: #fff;
+        @include mobile {
+          font-size: 1.9rem;
+        }
+      }
+      p {
+        color: rgb(255, 255, 255);
+      }
+    }
+    .right {
+      flex: 1;
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 580px;
+        gap: 20px;
+        @include mobile {
+          max-width: 380px;
+        }
+        input,
+        select,
+        textarea {
+          padding: 15px 20px;
+          outline: none;
+          // border: 1px solid $color-yellow;
+          background-color: #fff;
+          width: 100%;
+        }
+        button {
+          background-color: $color-yellow;
+          color: #fff;
+          padding: 14px 18px;
+          font-size: 15px;
+          width: 300px;
+          font-weight: bold;
+          @include mobile {
+            width: 350px;
           }
         }
       }

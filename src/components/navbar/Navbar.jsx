@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 document.addEventListener("mousedown", closeOpenMenus);
   return (
-    <div className='nav'>
+    <div className='nav' ref={navMenu}>
       <div className="nav-up">
         <div className="nav-call">
           <BiPhone />
@@ -30,7 +30,7 @@ document.addEventListener("mousedown", closeOpenMenus);
         <Link className="nav-logo">
           <img src="/ahmed.png" alt="" />
         </Link>
-        <ul ref={navMenu} style={{transform: `${nav ? 'translateX(0)' : ''}`}} onClick={() => setNav(p=> !p)}>
+        <ul  style={{transform: `${nav ? 'translateX(0)' : ''}`}} onClick={() => setNav(p=> !p)}>
           <Link to='/' className={`link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
           <Link to='/about' className={`link ${pathname === '/about' ? 'active' : ''}`}>About Us</Link>
           <Link to='/practice-areas' className={`link ${pathname === '/practice-areas' ? 'active' : ''}`}>Practice Areas</Link>
