@@ -12,7 +12,6 @@
       max-width: 500px;
       @include mobile {
         padding-top: 8rem;
-
       }
       span{
         color: $color-yellow;
@@ -47,8 +46,6 @@
       @include mobile{
         column-gap: 1rem;
         row-gap: 1rem;
-      
-        
       }
 
       .practice-sec{
@@ -101,6 +98,7 @@
           color: gray;
           @include mobile {
             font-size: 13px;
+            text-align: start;
           }
         }
       }

@@ -10,7 +10,6 @@ const BlogPage = () => {
           <img src="/blogBg.jpg" alt="" />
         </div>
         <h1>Our Blog <hr /></h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti maxime fugit non voluptates officia eveniet magnam quia obcaecati doloremque vero.</p>
       </div>
       <div className="container">
         {blogData.map((blog, index) => (

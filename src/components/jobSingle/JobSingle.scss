@@ -1,7 +1,8 @@
 @import '../../global.scss';
 
 .bg-img{
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: -9;
   img{
@@ -11,12 +12,16 @@
   }
 }
 .job-single{
-  margin-top: 16rem;
+  margin-top: 13rem;
   .wrapper{
     max-width: 900px;
     margin: 0 auto;
-    background-color: $color-light-gray;
+    background-color: $color-light;
     padding: 5rem;
+    @include mobile {
+      max-width: 350px;
+      padding: 2rem;
+    }
     h1{
       margin-bottom: 2.4rem;
       color: $color-dark-blue;
@@ -52,6 +57,10 @@
         padding: 15px 80px;
         color: #fff;
         font-size: 17px;
+        @include mobile {
+          padding: 10px 60px;
+          width: 100%;
+        }
       }
   }
   .job-contact-main {
@@ -95,7 +104,7 @@
         form {
           display: flex;
           flex-direction: column;
-          max-width: 480px;
+          max-width: 580px;
           gap: 10px;
           @include mobile {
             max-width: 380px;

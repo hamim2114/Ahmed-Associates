@@ -1,7 +1,7 @@
 export const blogData = [
   {
     img: '/blog1.jpg',
-    title: 'Who Can a Victim Sue after a Car Accident?',
+    title: 'Double Dipping in Spousal Support: The Impact on BC Family Law',
     userImg: '/avatar.jpg',
     userName: 'Barristar',
     date: 'Nov 11 2019'

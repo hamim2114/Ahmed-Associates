@@ -6,8 +6,16 @@
   @include flex();
   flex-direction: column;
   gap: 10px;
-  background-color: #fff;
+  background-color: $color-light;
   text-decoration: none;
+  transition: .3s;
+  &:hover{
+    transform: scale(1.03);
+  }
+  @include mobile {
+    padding: 10px 20px;
+          
+  }
   h2 {
     text-align: center;
     color: $color-dark-blue;
@@ -15,12 +23,20 @@
     font-size: 2.4rem;
     @include flex();
     flex-direction: column;
+    @include mobile {
+      font-size: 2rem;
+          
+    }
     hr{
         width: 300px;
         margin-top: .5rem;
         height: 3px;
         border: none;
         background-color: gray;
+        @include mobile {
+          height: 2px;
+          
+        }
     }
   }
   p{

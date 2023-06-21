@@ -25,38 +25,25 @@
       }
     }
     p{
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       color: gray;
 
     }
     .home-btn{
       background-color: $color-blue;
       padding: 15px 60px;
-      border-radius: 5px;
+      border-radius: 50px;
       font-weight: bold;
       text-transform: uppercase;
       font-size: 1rem;
       position: relative;
       overflow: hidden;
-      z-index: 6;
-      .home-link{
-        color: #fff;
-        text-decoration: none;
-      }
-      &::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 5px;
-        width: 0%;
-        height: 100%;
-        background-color: $color-yellow;
-        transition: all .3s ease;
-        z-index: -1;
-      }
-      &:hover::before{
-        width: 100%;
+      z-index: 10;
+      color: #fff;
+      text-decoration: none;
+      transition: .5s;
+      &:hover{
+        background-color: $color-dark-blue;
       }
     }
   }
