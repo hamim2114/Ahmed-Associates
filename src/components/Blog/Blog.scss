@@ -84,7 +84,7 @@
   .more-btn {
     @include flex();
     gap: 5px;
-    color: $color-blue;
+    color: gary;
     font-weight: bold;
     font-size: 16px;
     @include mobile {

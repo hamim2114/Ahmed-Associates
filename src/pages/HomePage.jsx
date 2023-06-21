@@ -22,7 +22,7 @@ const HomePage = () => {
             <Blog blog={blog} key={index} />
           ))}
         </div>
-        <Link to='/blog' className="more-btn link">read more<BsArrowRight/> </Link>
+        <Link to='/blog' className="more-blog-btn link">Our Blog<BsArrowRight/> </Link>
       </div>
     </div>
   )

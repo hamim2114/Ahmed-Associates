@@ -21,21 +21,23 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     @include mobile {
-      column-gap: 0px;
+      column-gap: 10px;
+      row-gap: 10px;
       grid-template-columns: repeat(2, 1fr);
       grid-row: 1/3;
     }
   }
-  .more-btn {
+  .more-blog-btn {
     @include flex();
     gap: 5px;
     color: $color-blue;
     font-weight: bold;
     font-size: 16px;
+    margin-top: 2rem;
     @include mobile {
       position: absolute;
       right: 4rem;
-      bottom: 11rem;
+      bottom: 8.5rem;
     }
   }
 }
