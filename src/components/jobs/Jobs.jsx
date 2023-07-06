@@ -3,9 +3,9 @@ import './Jobs.scss';
 
 const Jobs = ({job}) => {
   return (
-    <Link to='/jobs/legal-assistant' className="jobs">
-      <h2>{job.title} <hr /></h2>
-      <p>{job.desc}</p>
+    <Link to={`/jobs/${job._id}`} className="jobs">
+      <h2>{job.title}</h2>
+      <span>{new Date(job.createdAt).toLocaleDateString()}</span>
     </Link>
   )
 }

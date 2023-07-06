@@ -27,20 +27,8 @@
       font-size: 2rem;
           
     }
-    hr{
-        width: 300px;
-        margin-top: .5rem;
-        height: 3px;
-        border: none;
-        background-color: gray;
-        @include mobile {
-          height: 2px;
-          
-        }
-    }
   }
-  p{
+  span{
     color: gray;
-    font-size: 16px;
   }
 }

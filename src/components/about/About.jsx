@@ -3,9 +3,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
 import { Link } from 'react-router-dom';
+import { useQuery } from '@tanstack/react-query';
+import { axiosReq } from '../../utils/axiosReq';
 
 const About = () => {
-
+  const { isLoading, error, data: gallery } = useQuery({
+    queryKey: ['gallery'],
+    queryFn: () => axiosReq.get('/gallery').then(res => res.data)
+  });
+ 
   const settings = {
     infinite: true,
     speed: 1000,
@@ -18,9 +24,12 @@ const About = () => {
       <div className="about">
         <div className="slider-main">
           <Slider className='slider' {...settings}>
-            <div className='slider-img'><img src="/img1.jpg" alt="" /></div>
-            <div className='slider-img'><img src="/img2.jpg" alt="" /></div>
-            <div className='slider-img'><img src="/img3.jpg" alt="" /></div>
+            {
+              isLoading ? <div>Loading..</div> : error ? <div>Something went wrong!</div> :
+                gallery.map((data, i) => (
+                  <div className='slider-img' key={i}><img src={data.image} alt="" /></div>
+                ))
+            }
           </Slider>
         </div>
         <div className="about-txt">

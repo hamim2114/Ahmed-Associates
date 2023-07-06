@@ -79,7 +79,7 @@ function App() {
           element: <JobPage />,
         },
         {
-          path: '/jobs/:category',
+          path: '/jobs/:id',
           element: <JobSingle />,
         },
       ],

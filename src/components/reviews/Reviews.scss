@@ -7,6 +7,10 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  margin-bottom: 6rem;
+  @include mobile {
+    margin-bottom: 3rem;
+  }
   &::before{
     content: '';
     position: absolute;

@@ -27,6 +27,7 @@
     h1 {
       margin-bottom: 1rem;
       color: $color-dark-blue;
+      text-overflow: hidde;
       hr {
         max-width: 500px;
         margin-top: 5px;
@@ -48,22 +49,9 @@
         @include flex();
         gap: 5px;
       }
-      .user{
-        @include flex();
-        gap: 5px;
-      }
-      .category{
-        @include flex();
-        gap: 5px;
-      }
     }
     .text {
-      h2{
-        margin-bottom: 10px;
-      }
-      p{
-        margin-bottom: 30px;
-      }
+     
     }
     .back-arrow {
       margin-top: 2.5rem;

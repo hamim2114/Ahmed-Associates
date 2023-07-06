@@ -1,19 +1,19 @@
 @import '../../global.scss';
 
-.bg-img{
+.bg-img {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: -9;
-  img{
+  img {
     width: 100%;
     height: 400px;
     object-fit: cover;
   }
 }
-.job-single{
+.job-single {
   margin-top: 13rem;
-  .wrapper{
+  .wrapper {
     max-width: 900px;
     margin: 0 auto;
     background-color: $color-light;
@@ -22,113 +22,31 @@
       max-width: 350px;
       padding: 2rem;
     }
-    h1{
-      margin-bottom: 2.4rem;
+    h1 {
+      // margin-bottom: 2.4rem;
       color: $color-dark-blue;
-      hr{
+      hr {
         max-width: 500px;
         height: 2px;
         border: none;
         background-color: $color-yellow;
       }
     }
-    h2{
-      margin-bottom: 1rem;
-      color: $color-dark-blue;
+    span {
+      color: gray;
     }
-    .text{
-      .job-responsibility {
-        font-size: 16px;
-        line-height: 1.5;
-        color: #333;
-        margin-bottom: 20px;
-      }
-      .requirements {
-        font-weight: bold;
-      }
-      .note {
-        font-style: italic;
-        color: #888;
-      }
+    .text {
+      margin: 2rem 0;
     }
-      button{
-        background-color: $color-dark-blue;
-        margin-top: 2.5rem;
-        padding: 15px 80px;
-        color: #fff;
-        font-size: 17px;
-        @include mobile {
-          padding: 10px 60px;
-          width: 100%;
-        }
-      }
-  }
-  .job-contact-main {
-    background-color: $color-dark-blue;
-    .wrapper {
-      @include container;
-      @include flex();
+    .apply-btn {
       background-color: $color-dark-blue;
-      padding: 3rem 1rem;
-      @include tablet {
-        flex-direction: column;
-        gap: 50px;
-      }
+      text-decoration: none;
+      padding: 10px 50px;
+      color: #fff;
+      font-size: 17px;
       @include mobile {
-        padding: 3rem 1rem;
-      }
-      .left {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        // gap: 20px;
-        flex: 1;
-        margin-right: 6rem;
-        h3{
-          color: #fff
-        }
-        h1 {
-          @include font-play-fair;
-          font-size: 2.4rem;
-          color: #fff;
-          @include mobile {
-            font-size: 1.9rem;
-          }
-        }
-        p {
-          color: rgb(255, 255, 255);
-        }
-      }
-      .right {
-        flex: 1;
-        form {
-          display: flex;
-          flex-direction: column;
-          max-width: 580px;
-          gap: 10px;
-          @include mobile {
-            max-width: 380px;
-          }
-          input,
-          select,
-          textarea {
-            padding: 12px 15px;
-            outline: none;
-            background-color: #fff;
-            width: 100%;
-          }
-          button {
-            background-color: $color-yellow;
-            color: #fff;
-            padding: 14px 18px;
-            font-size: 15px;
-            width: 250px;
-            font-weight: bold;
-            @include mobile {
-              width: 350px;
-            }
-          }
-        }
+        padding: 10px 60px;
+        width: 100%;
       }
     }
   }

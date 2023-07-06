@@ -1,8 +1,14 @@
 import './JobPage.scss';
 import Jobs from '../components/jobs/Jobs';
-import { jobData } from '../data/jobData';
+import { useQuery } from '@tanstack/react-query';
+import { axiosReq } from '../utils/axiosReq';
 
 const JobPage = () => {
+  const { isLoading, error, data: jobData } = useQuery({
+    queryKey: ['jobs'],
+    queryFn: () => axiosReq.get('/job').then(res => res.data)
+  });
+
   return (
     <div className='job-page'>
       <div className="top">
@@ -18,6 +24,8 @@ const JobPage = () => {
         <h1>AVAILABLE JOBS <hr /></h1>
         <div className="wrapper">
             {
+              isLoading ? 'Loading..' : error ? 'Something went wrong!' :
+              jobData.length === 0 ? <h2 style={{ padding: '5rem', color: 'gray' }}>No Job Available.</h2> :
               jobData.map((data, i) => (
                 <Jobs job={data} key={i} />
               ))

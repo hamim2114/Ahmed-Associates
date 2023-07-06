@@ -1,9 +1,14 @@
 import './Contact.scss';
+import { useForm } from '@formspree/react';
 import { IoLocationSharp } from 'react-icons/io5';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xqkvzoqq");
+  if (state.succeeded) {
+      return <h2 style={{color: 'green', padding: '5rem'}}>Thanks for make Appointment! We will contact you soon.</h2>;
+  }
   return (
     <div className="contact-main">
       <div className="left">
@@ -36,20 +41,20 @@ const Contact = () => {
         </div>
       </div>
       <div className="right">
-        <form action="">
-          <input type="text" className="name" placeholder='Name' required />
+        <form onSubmit={handleSubmit}>
+          <input name='name' type="text" className="name" placeholder='Name' required />
           <div className="phn-email">
-            <input type="text" className="phone" placeholder='Phone' required />
-            <input type="text" className="email" placeholder='Email' required />
+            <input name='phone' type="text" className="phone" placeholder='Phone' required />
+            <input name='email' type="text" className="email" placeholder='Email' required />
           </div>
-          <select name="" required>
+          <select name="case" required>
             <option value="" disabled selected>Select Case</option>
-            <option value="">Criminal Law</option>
-            <option value="">Business Law</option>
-            <option value="">Family Law</option>
-            <option value="">Real State Law</option>
+            <option value="criminal-law">Criminal Law</option>
+            <option value="business-law">Business Law</option>
+            <option value="family-law">Family Law</option>
+            <option value="real-estate-law">Real Estate Law</option>
           </select>
-          <textarea name="" id="" cols="30" rows="10" required placeholder='Case Description'></textarea>
+          <textarea name="message" cols="30" rows="10" required placeholder='Case Description'></textarea>
           <button type="submit">Make Appointment</button>
         </form>
       </div>
