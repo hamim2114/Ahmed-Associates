@@ -1,10 +1,11 @@
 @import '../../global.scss';
 
 .jobs{
-  max-width: 800px;
-  padding: 20px 80px;
-  @include flex();
-  flex-direction: column;
+  width: 800px;
+  padding: 30px 80px;
+  @include flex(center, space-between);
+  border: .5px solid rgb(212, 212, 212);
+  border-radius: 10px;
   gap: 10px;
   background-color: $color-light;
   text-decoration: none;
@@ -14,7 +15,7 @@
   }
   @include mobile {
     padding: 10px 20px;
-          
+    flex-direction: column;
   }
   h2 {
     text-align: center;
@@ -25,10 +26,12 @@
     flex-direction: column;
     @include mobile {
       font-size: 2rem;
-          
     }
   }
   span{
     color: gray;
+    b{
+      margin-right: 10px;
+    }
   }
 }
