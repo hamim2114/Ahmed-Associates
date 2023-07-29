@@ -7,7 +7,7 @@ import { Link, useLocation } from 'react-router-dom'
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const { pathname } = useLocation();
-  const navMenu = useRef(); Link
+  const navMenu = useRef();
   const closeOpenMenus = (e) => {
     if (navMenu.current && nav && !navMenu.current.contains(e.target)) {
       setNav(false);

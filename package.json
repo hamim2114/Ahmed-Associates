@@ -12,6 +12,7 @@
     "@formspree/react": "^2.4.4",
     "@tanstack/react-query": "^4.29.19",
     "axios": "^1.4.0",
+    "framer-motion": "^10.15.0",
     "html-react-parser": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
