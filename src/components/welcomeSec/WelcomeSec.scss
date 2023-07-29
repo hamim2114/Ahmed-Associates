@@ -2,7 +2,7 @@
 
 .welcome-sec {
   background-color: $color-light-gray;
-  overflow-x: hidden;
+  overflow: hidden;
   .wrapper {
     @include container;
     @include flex();
