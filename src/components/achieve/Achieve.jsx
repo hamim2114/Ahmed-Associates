@@ -19,8 +19,8 @@ const Achieve = () => {
       <div className="bottom">
         <motion.div
           transition={{ duration: 1 }}
-          initial={{ x: 200, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           
           className="bottom-sec">
           <div className="icon"><GiScales /></div>
@@ -31,8 +31,8 @@ const Achieve = () => {
         </motion.div>
         <motion.div
           transition={{ duration: 1 }}
-          initial={{ x: 200, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           
           className="bottom-sec">
           <div className="icon"><GiFlatHammer /></div>
@@ -43,8 +43,8 @@ const Achieve = () => {
         </motion.div>
         <motion.div
           transition={{ duration: 1 }}
-          initial={{ x: 200, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           
           className="bottom-sec">
           <div className="icon"> <HiBuildingLibrary /></div>
@@ -55,8 +55,8 @@ const Achieve = () => {
         </motion.div>
         <motion.div
           transition={{ duration: 1 }}
-          initial={{ x: 200, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           
           className="bottom-sec">
           <div className="icon"><GoGlobe /></div>
