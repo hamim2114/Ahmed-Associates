@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
 import SliderContent from './SliderContent';
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const reviewData = [
   {
@@ -38,19 +38,15 @@ const Reviews = () => {
   };
   return (
     <div className="review-main">
-      <motion.div
-      transition={{ duration: 1 }}
-      initial={{ scale: 1.5, opacity: 0 }}
-      whileInView={{ scale: 1, opacity: 1 }}
-      viewport={{ once: true }}
-      className="review">
+      <div
+        className="review">
         <h1>Client Testimonials</h1>
         <Slider {...settings} className="slider">
           {reviewData.map((review, i) => (
             <SliderContent review={review} key={i} />
           ))}
         </Slider>
-      </motion.div>
+      </div>
     </div>
   )
 }
