@@ -29,7 +29,7 @@ const HomeSection = () => {
       </div>
       <motion.div
         transition={{ duration: 1 }}
-        initial={{ scale: 1.5, opacity: 0 }}
+        initial={{ scale: 0, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         viewport={{ once: true }}
         className="right">

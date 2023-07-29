@@ -8,6 +8,7 @@
   background-attachment: fixed;
   background-size: cover;
   margin-bottom: 6rem;
+  overflow-x: hidden;
   @include mobile {
     margin-bottom: 3rem;
   }
