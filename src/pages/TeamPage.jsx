@@ -2,6 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import Team from '../components/team/Team';
 import './TeamPage.scss';
 import { axiosReq } from '../utils/axiosReq';
+import {motion} from 'framer-motion'
 
 const TeamPage = () => {
   const { isLoading, error, data: teamData } = useQuery({

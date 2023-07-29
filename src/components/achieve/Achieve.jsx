@@ -11,17 +11,17 @@ const Achieve = () => {
       <div className="top">
         <motion.h1
           transition={{ duration: 1 }}
-          initial={{ y: 200, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          
+          initial={{ scale: 1.5, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{once: true}}
         >We’re not just lawyers,<br /> we’re advocates for justice.</motion.h1>
       </div>
       <div className="bottom">
         <motion.div
           transition={{ duration: 1 }}
-          initial={{ y: 200, opacity: 0 }}
+          initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          
+          viewport={{once: true}}
           className="bottom-sec">
           <div className="icon"><GiScales /></div>
           <div className="desc">
@@ -31,9 +31,9 @@ const Achieve = () => {
         </motion.div>
         <motion.div
           transition={{ duration: 1 }}
-          initial={{ y: 200, opacity: 0 }}
+          initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          
+          viewport={{once: true}}
           className="bottom-sec">
           <div className="icon"><GiFlatHammer /></div>
           <div className="desc">
@@ -43,9 +43,9 @@ const Achieve = () => {
         </motion.div>
         <motion.div
           transition={{ duration: 1 }}
-          initial={{ y: 200, opacity: 0 }}
+          initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          
+          viewport={{once: true}}
           className="bottom-sec">
           <div className="icon"> <HiBuildingLibrary /></div>
           <div className="desc">
@@ -55,9 +55,9 @@ const Achieve = () => {
         </motion.div>
         <motion.div
           transition={{ duration: 1 }}
-          initial={{ y: 200, opacity: 0 }}
+          initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          
+          viewport={{once: true}}
           className="bottom-sec">
           <div className="icon"><GoGlobe /></div>
           <div className="desc">
