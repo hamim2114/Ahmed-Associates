@@ -22,8 +22,8 @@ const HomePage = () => {
       <WelcomeSec />
       <Achieve />
       <Reviews />
-      {
-        blogData?.length > 0 && <div className="blog-sec">
+
+        <div className="blog-sec">
           <motion.h1
             transition={{ duration: 1 }}
             initial={{ scale: 1.5, opacity: 0 }}
@@ -31,7 +31,7 @@ const HomePage = () => {
             viewport={{ once: true }}
           >Some From Our Blog</motion.h1>
           <div className="blog-data">
-            {blogData?.slice(0, 3).map((blog, index) => (
+            {isLoading ? 'Loading..' : blogData?.slice(0, 3).map((blog, index) => (
               <motion.div
                 key={index}
                 transition={{ duration: 1, delay: index * .4 }}
@@ -45,7 +45,7 @@ const HomePage = () => {
           </div>
           <Link to='/blog' className="more-blog-btn link">Our Blog<BsArrowRight /> </Link>
         </div>
-      }
+      
     </div>
   )
 }
