@@ -8,23 +8,24 @@ import { motion } from 'framer-motion'
 const reviewData = [
   {
     img: '/reviewp1.jpg',
-    review: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour variations of passages',
-    name: 'Eliza Gordon',
-    position: 'Business Manager'
+    review: "I had a fantastic experience with this law firm. They provided exceptional legal advice and representation. The team's dedication to my case was outstanding, and I couldn\'t have asked for better support. They truly care about their clients.",
+    name: 'Alice Johnson',
+    position: 'Corporate Executive'
   },
   {
     img: '/reviewp2.jpg',
-    review: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour variations of passages',
-    name: 'Frankie Rehardson',
-    position: 'Business Manager'
+    review: 'Working with this law firm was a game-changer for me. Their expertise and attention to detail were impressive. They went above and beyond to achieve a favorable outcome for my legal matter. I highly recommend their services.',
+    name: 'John Smith',
+    position: 'Small Business Owner'
   },
   {
     img: '/reviewp3.jpg',
-    review: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour variations of passages',
-    name: 'Zachary Hervey',
-    position: 'Business Manager'
+    review: "I can\'t thank this law firm enough for their legal assistance. Their team's knowledge and professionalism are unmatched. They provided clear guidance throughout the legal process and helped me navigate a complex situation successfully.",
+    name: 'Emily Davis',
+    position: 'Individual Client'
   },
-]
+];
+
 
 const Reviews = () => {
   const settings = {

@@ -20,11 +20,23 @@ const Navbar = () => {
         <div className="nav-up">
           <div className="nav-call">
             <BiPhone />
-            <span>02-55014178</span>
+            <span>+880255014178</span>
+          </div>
+          <div className="nav-call">
+            <BiPhone />
+            <span>+8801794876432</span>
+          </div>
+          <div className="nav-call">
+            <BiPhone />
+            <span>+8801732965736</span>
           </div>
           <div className="nav-mail">
             <GrMail />
             <span>aaassociates49@gmail.com</span>
+          </div>
+          <div className="nav-mail">
+            <GrMail />
+            <span>aaassociates13@yahoo.com</span>
           </div>
         </div>
         <div className="nav-down">

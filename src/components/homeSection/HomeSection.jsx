@@ -17,14 +17,14 @@ const HomeSection = () => {
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-        >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo</motion.p>
+        >We are a law firm established in 2013, with a view to providing legal support to its valued clients in legal matters. The law firm has been formed with highly educated and brilliant professionals. They represent highest standards of expertise of different backgrounds. Their only aim is to offer unrivalled depth of legal resources across Bangladesh.</motion.p>
         <motion.div
           transition={{ duration: 1 }}
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
         >
-          <Link to='/contact' className='home-btn'>Get Started</Link>
+          <Link to='/about' className='home-btn'>Learn More</Link>
         </motion.div>
       </div>
       <motion.div

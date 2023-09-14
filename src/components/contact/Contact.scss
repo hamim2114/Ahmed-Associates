@@ -2,101 +2,103 @@
 
 .contact-main {
   @include container;
-  @include flex();
-  padding: 8rem 1rem;
-  @include tablet {
-    flex-direction: column;
-    gap: 50px;
-  }
-  @include mobile {
-    padding: 7rem 1rem 3rem;
-  }
-  .left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    flex: 1;
-    margin-right: 6rem;
-    h1{
-      @include font-play-fair;
-      font-size: 2.4rem;
-      color: $color-dark-blue;
-      @include mobile {
-        font-size: 1.9rem;
-      }
+  .wrapper {
+    @include flex();
+    padding: 8rem 1rem;
+    @include tablet {
+      flex-direction: column;
+      gap: 50px;
     }
-    p{
-      color: gray
+    @include mobile {
+      padding: 7rem 1rem 3rem;
     }
-    .contact{
-      &-sec{
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 1.5rem;
-        .icon{
-          font-size: 2rem;
-          margin-right: .9rem;
-          color: $color-yellow;
-        }
-        .address{
-          h3{
-            color: $color-dark-blue;
-          }
-          p{
-            color: gray;
-          }
-        }
-       
-      }
-    }
-  }
-  .right {
-    flex: 1;
-    form {
+    .left {
       display: flex;
       flex-direction: column;
-      max-width: 580px;
+      align-items: flex-start;
       gap: 20px;
-      @include mobile {
-        max-width: 380px;
+      flex: 1;
+      margin-right: 6rem;
+      h1 {
+        @include font-play-fair;
+        font-size: 2.4rem;
+        color: $color-dark-blue;
+        @include mobile {
+          font-size: 1.9rem;
+        }
       }
-      input,
-      select,textarea{
-        padding: 15px 20px;
-        outline: none;
-        border: 1px solid $color-yellow;
-        background-color: #fff;
-        width: 100%;
+      p {
+        color: gray;
       }
-      .phn-email {
+      .contact {
+        &-sec {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 1.5rem;
+          .icon {
+            font-size: 2rem;
+            margin-right: 0.9rem;
+            color: $color-yellow;
+          }
+          .address {
+            h3 {
+              color: $color-dark-blue;
+            }
+            p {
+              color: gray;
+            }
+          }
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      form {
         display: flex;
+        flex-direction: column;
+        max-width: 580px;
         gap: 20px;
         @include mobile {
-          flex-direction: column;
-          width: 350px;
+          max-width: 380px;
         }
-        .phone {
-          flex: 1;
-        }
-        .email {
-          flex: 1;
-        }
-      }
-      select {
-        option{
+        input,
+        select,
+        textarea {
+          padding: 15px 20px;
+          outline: none;
+          border: 1px solid $color-yellow;
           background-color: #fff;
+          width: 100%;
         }
-      }
-      button{
-        background-color: $color-yellow;
-        color: #fff;
-        padding: 14px 18px;
-        font-size: 15px;
-        width: 300px;
-        font-weight: bold;
-        @include mobile {
-          width: 350px;
+        .phn-email {
+          display: flex;
+          gap: 20px;
+          @include mobile {
+            flex-direction: column;
+            width: 350px;
+          }
+          .phone {
+            flex: 1;
+          }
+          .email {
+            flex: 1;
+          }
+        }
+        select {
+          option {
+            background-color: #fff;
+          }
+        }
+        button {
+          background-color: $color-yellow;
+          color: #fff;
+          padding: 14px 18px;
+          font-size: 15px;
+          width: 300px;
+          font-weight: bold;
+          @include mobile {
+            width: 350px;
+          }
         }
       }
     }

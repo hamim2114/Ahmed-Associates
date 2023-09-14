@@ -11,15 +11,14 @@ const WelcomeSec = () => {
           whileInView={{ scale: 1, opacity: 1 }}
           viewport={{ once: true }}
         >Welcome to Ahmed and Ahmed Associates <br /> - Providing Legal Help</motion.h1>
-        <span>Experience . Reliability . Ethics</span>
+        <span>(Barristers, Advocates, Tax & Company Law Consultants)</span>
         <hr />
         <motion.p
           transition={{ duration: 1 }}
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</motion.p>
+        >We always pro-active, constructive and endeavours to provide best and quality legal services to its clients. Ahmed & Ahmed Associates is professional, dedicated, accommodative and work to achieve the best results and meet clients’ legal needs and thus ensures his relief and comfort from agonies and anxieties. </motion.p>
       </div>
     </div>
   )

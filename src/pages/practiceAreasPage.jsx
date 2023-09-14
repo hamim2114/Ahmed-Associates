@@ -51,7 +51,7 @@ const practiceAreasPage = () => {
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</motion.p>
+          >Whether you require legal assistance in criminal matters, business transactions, family disputes, or real estate transactions, we are committed to delivering the highest level of service and expertise to protect your rights and interests.</motion.p>
         </div>
         <div className="bottom">
           {
