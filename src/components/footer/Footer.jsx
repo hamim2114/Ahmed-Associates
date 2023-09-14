@@ -23,9 +23,15 @@ const Footer = () => {
           </div>
           <div className="footer-contact">
             <h1>Contact Us</h1>
-            <p><b>LOCATION:</b>  Office: Suit # 16, (6th Floor), level 7,Kabbokas Super Market, Plot # 3/D, Kawran Bazar, Dhaka-1205 1215 Dhaka, Dhaka Division, Bangladesh</p>
-            <span><b>PHONE:</b>  02-55014178</span>
-            <span><b>EMAIL:</b>  aaassociates49@gmail.com</span>
+            <p><b>Court Chamber:</b>  Room No. 409 (3rd Floor), Annex Extension Building, Supreme Court Bar Association Building, Dhaka-1000</p>
+            <p><b>Corporate Chamber:</b>  RSuite No. 16, Level-7 Kabbakos Super Market, Plot No. 3/D, Kawran Bazar, Tejgaon, Dhaka-1215.</p>
+            <b>PHONE:</b>
+            <span> +880255014178</span>
+            <span>  +8801794876432</span>
+            <span>  +8801732965736</span>
+            <b>EMAIL:</b>
+            <span>  aaassociates49@gmail.com</span>
+            <span>  aaassociates13@yahoo.com</span>
           </div>
         </div>
         <hr />
