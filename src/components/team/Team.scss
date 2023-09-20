@@ -1,77 +1,71 @@
 @import '../../global.scss';
 
-.team{
+.team {
   position: relative;
   width: 300px;
-  height:380px;
-  background-color: #f5f3f3;
+  height: 380px;
+  // background-color: #f5f3f3;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   overflow: hidden;
   padding: 10px;
   @include mobile {
     width: 170px;
-    height:240px;
+    height: 270px;
   }
-  &:hover{
-    .down{
-      transform: translateY(0);
-    }
-  }
-  .up{
-    overflow: hidden;
-    img{
-      transition: .5s;
+  .up {
+    img {
+      transition: 0.5s;
       width: 100%;
       height: 290px;
       object-fit: cover;
       @include mobile {
-        height: 210px;
+        height: 120px;
+        width: 100%;
       }
     }
   }
-  .down{
+  .down {
     position: absolute;
+    color: gray;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 142px;
+    // height: 142px;
     text-align: center;
-    transform: translateY(44px); 
-    background-color: $color-light;
-    transition: .3s ease-in-out;
+    // background-color: $color-light;
+    transition: 0.3s ease-in-out;
     @include mobile {
-      transform: translateY(30px); 
-      height: 100px;
-    }
-    .name{
-      @include font-play-fair;
-      font-size: 2rem;
-      margin-top: 15px;
-      @include mobile {
-        margin-top: 8px;
-        font-size: 1.2rem;
-      }
-    }
-    .title{
-      @include mobile {
-       font-size: 11px;
-       color: gray
-      }
-    }
-    .arrow{
+      position: static;
+      
       color: gray
     }
-    .social{
-      @include flex();
-      gap: 15px;
-      padding: 5px 0;
+    .name {
+      @include font-play-fair;
+      font-size: 1.4rem;
+      margin-top: 15px;
       @include mobile {
-        padding: 0px 0;
-
+        margin-top: 5px;
+        font-size: 1.1rem;
       }
-      .social-icon{
-        font-size: 1.2rem;
-        color: $color-yellow;
+    }
+    .title {
+      font-size: 13px;
+      margin-top: 5px;
+      @include mobile {
+        font-size: 10px;
+        color: gray;
       }
+    }
+    .details-btn {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      // border: 1px solid rgb(192, 192, 192);
+      width: 100%;
+      justify-content: center;
+      transition: .5s;
     }
   }
 }

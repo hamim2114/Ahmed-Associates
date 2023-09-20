@@ -1,73 +1,30 @@
 import React from 'react'
-import PracticeAreas from '../components/practiceAreas/PracticeAreas';
 import { motion } from 'framer-motion';
-
-const practiceData = [
-  {
-    title: 'Family Law',
-    desc: 'I must explain to you how all this mistaken idea of denouncing pleasure and praising pain'
-  },
-  {
-    title: 'Personal Injury',
-    desc: 'I must explain to you how all this mistaken idea of denouncing pleasure and praising pain'
-  },
-  {
-    title: 'Criminal Law',
-    desc: 'I must explain to you how all this mistaken idea of denouncing pleasure and praising pain'
-  },
-  {
-    title: 'Education Law',
-    desc: 'I must explain to you how all this mistaken idea of denouncing pleasure and praising pain'
-  },
-  {
-    title: 'Real Estate Law',
-    desc: 'I must explain to you how all this mistaken idea of denouncing pleasure and praising pain'
-  },
-  {
-    title: 'Business Law',
-    desc: 'I must explain to you how all this mistaken idea of denouncing pleasure and praising pain'
-  },
-]
+import { useQuery } from '@tanstack/react-query';
+import { axiosReq } from '../../../admin/src/utils/axiosReq';
+import parser from 'html-react-parser';
+import './PracticeAreaPage.scss'
 
 const practiceAreasPage = () => {
+  const { isLoading, error, data } = useQuery({
+    queryKey: ['practice'],
+    queryFn: () => axiosReq.get('/practice/').then(res => res.data)
+  });
+
   return (
     <div className="practice">
       <div className="wrapper">
-        <div className="top">
-          <motion.span
-            transition={{ duration: 4 }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-          >How Can We Help You</motion.span>
-          <motion.h1
-            transition={{ duration: 1 }}
-            initial={{ scale: 1.5, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            viewport={{ once: true }}
-          >Our Legal Practice Area</motion.h1>
-          <motion.p
-            transition={{ duration: 1 }}
-            initial={{ y: -100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-          >Whether you require legal assistance in criminal matters, business transactions, family disputes, or real estate transactions, we are committed to delivering the highest level of service and expertise to protect your rights and interests.</motion.p>
-        </div>
-        <div className="bottom">
-          {
-            practiceData.map((d, i) => (
-              <motion.div
-                key={i}
-                transition={{ duration: 1, delay: i * .4 }}
-                initial={{ y: 100, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-              >
-                <PracticeAreas data={d} id={i} />
-              </motion.div>
-            ))
-          }
-        </div>
+        {
+          isLoading ? 'Loading..' : error ? 'Something went wrong!' :
+            <>
+              <div className="top">
+                <h1>{data[0]?.title}</h1>
+              </div>
+              <div className="bottom">
+                {parser(data[0].body)}
+              </div>
+            </>
+        }
       </div>
     </div>
   )

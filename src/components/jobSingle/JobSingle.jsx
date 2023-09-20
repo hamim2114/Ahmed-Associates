@@ -20,15 +20,19 @@ const JobSingle = () => {
         <div className="wrapper">
           {
             isLoading ? 'Loading..' : error ? 'Something went wrong!' :
-            !job ? <h2 style={{ padding: '5rem', color: 'gray' }}>Job Not Found!</h2> :
-              <>
-                <h1>{job.title}</h1>
-                <span>{new Date(job.createdAt).toLocaleDateString()}</span>
-                <div className="text">
-                  {parser(job.body)}
-                </div>
-                <Link to='mailto: aaassociates49@gmail.com' className='apply-btn'>Apply For This Job</Link>
-              </>
+              !job ? <h2 style={{ padding: '5rem', color: 'gray' }}>Job Not Found!</h2> :
+                <>
+                  <h1>{job.title}</h1>
+                  <span>{new Date(job.createdAt).toLocaleDateString('en-GB', {
+                    day: 'numeric',
+                    month: 'long',
+                    year: 'numeric',
+                  })}</span>
+                  <div className="text">
+                    {parser(job.body)}
+                  </div>
+                  <Link to='mailto: aaassociates49@gmail.com' className='apply-btn'>Apply For This Job</Link>
+                </>
           }
         </div>
       </div>

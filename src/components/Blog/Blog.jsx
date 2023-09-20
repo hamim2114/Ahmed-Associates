@@ -11,7 +11,11 @@ const Blog = ({ blog }) => {
       </div>
       <div className="title">{blog.title.substring(0, 35)} ...</div>
       <div className="date-btn">
-        <div className="date">{new Date(blog.createdAt).toLocaleDateString()}</div>
+        <div className="date">{new Date(blog.createdAt).toLocaleDateString('en-GB', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric',
+        })}</div>
         <button className="more-btn link">read more<BsArrowRight /> </button>
       </div>
     </Link>

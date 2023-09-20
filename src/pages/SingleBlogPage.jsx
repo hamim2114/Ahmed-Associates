@@ -27,7 +27,11 @@ const SingleBlogPage = () => {
                 <div className="wrapper">
                   <h1>{blog.title} <hr /></h1>
                   <div className='info'>
-                    <div className="time"><MdOutlineAccessTimeFilled /> {new Date(blog.createdAt).toLocaleDateString()}</div>
+                    <div className="time"><MdOutlineAccessTimeFilled /> { new Date(blog.createdAt).toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  })}</div>
                   </div>
                   <div className="text">
                     {parser(blog.body)}

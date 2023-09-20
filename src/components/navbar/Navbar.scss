@@ -1,7 +1,12 @@
 @import '../../global.scss';
 
 .nav-main {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   background-color: #fff;
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   .nav {
     @include container;
     color: $color-dark;

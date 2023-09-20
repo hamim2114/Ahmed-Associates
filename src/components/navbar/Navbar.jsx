@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className="nav-main">
       <div className='nav' ref={navMenu}>
-        <div className="nav-up">
+        {/* <div className="nav-up">
           <div className="nav-call">
             <BiPhone />
             <span>+880255014178</span>
@@ -38,7 +38,7 @@ const Navbar = () => {
             <GrMail />
             <span>aaassociates13@yahoo.com</span>
           </div>
-        </div>
+        </div> */}
         <div className="nav-down">
           <Link className="nav-logo">
             <img src="/ahmed.png" alt="" />
@@ -46,7 +46,7 @@ const Navbar = () => {
           <ul style={{ transform: `${nav ? 'translateX(0)' : ''}` }} onClick={() => setNav(p => !p)}>
             <Link to='/' className={`link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
             <Link to='/about' className={`link ${pathname === '/about' ? 'active' : ''}`}>About Us</Link>
-            <Link to='/practice-areas' className={`link ${pathname === '/practice-areas' ? 'active' : ''}`}>Practice Areas</Link>
+            <Link to='/legal-services' className={`link ${pathname === '/legal-services' ? 'active' : ''}`}>Legal Services</Link>
             <Link to='/team' className={`link ${pathname === '/team' ? 'active' : ''}`}>Our Team</Link>
             <Link to='/blog' className={`link ${pathname === '/blog' ? 'active' : ''}`}>Blog</Link>
             <Link to='/career' className={`link ${pathname === '/career' ? 'active' : ''}`}>Career</Link>

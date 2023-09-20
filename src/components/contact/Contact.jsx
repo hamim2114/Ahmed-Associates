@@ -79,7 +79,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1826.2374614259602!2d90.40007228710203!3d23.730437916523076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b999fb9a00a7%3A0x6204a392088f8e6b!2sAnnex%20Extension%20Building%2C%20Bangladesh%20Supreme%20Court%20Bar%20Association!5e0!3m2!1sen!2sbd!4v1694706968471!5m2!1sen!2sbd" width="100%" height="450" style={{border:0, marginBottom: '5rem'}} referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8792786908216!2d90.39186301074342!3d23.751683978580505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8981ad5a153%3A0x80e209745fc90229!2sKabbokash%20Super%20Market!5e0!3m2!1sen!2sbd!4v1695144137178!5m2!1sen!2sbd" width="100%" height="450" style={{border:0, marginBottom: '5rem'}} referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
   )

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-info">
             <img src="/ahmedwhite.png" alt="" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iure possimus ab voluptates, inventore earum.</p>
+            <p>We always pro-active, constructive and endeavours to provide best and quality legal services to its clients. Ahmed & Ahmed Associates is professional, dedicated, accommodative and work to achieve the best results and meet clients’ legal needs and thus ensures his relief and comfort from agonies and anxieties.</p>
           </div>
           <div className="footer-links">
             <h1>Quick Links</h1>
@@ -23,7 +23,6 @@ const Footer = () => {
           </div>
           <div className="footer-contact">
             <h1>Contact Us</h1>
-            <p><b>Court Chamber:</b>  Room No. 409 (3rd Floor), Annex Extension Building, Supreme Court Bar Association Building, Dhaka-1000</p>
             <p><b>Corporate Chamber:</b>  RSuite No. 16, Level-7 Kabbakos Super Market, Plot No. 3/D, Kawran Bazar, Tejgaon, Dhaka-1215.</p>
             <b>PHONE:</b>
             <span> +880255014178</span>

@@ -4,6 +4,7 @@ import './App.scss'
 
 const Footer = lazy(() => import('./components/footer/Footer'));
 import Navbar from './components/navbar/Navbar';
+import SingleTeamPage from './pages/SingleTeamPage';
 const JobPage = lazy(() => import('./pages/JobPage'));
 const JobSingle = lazy(() => import('./components/jobSingle/JobSingle'));
 const SingleBlogPage = lazy(() => import('./pages/SingleBlogPage'));
@@ -51,7 +52,7 @@ function App() {
           element: <AboutPage />,
         },
         {
-          path: '/practice-areas',
+          path: '/legal-services',
           element: <PracticeAreasPage />,
         },
         {
@@ -65,6 +66,10 @@ function App() {
         {
           path: '/team',
           element: <TeamPage />,
+        },
+        {
+          path: '/team/:id',
+          element: <SingleTeamPage />,
         },
         {
           path: '/career',
