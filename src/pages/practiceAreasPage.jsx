@@ -1,9 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import { useQuery } from '@tanstack/react-query';
-import { axiosReq } from '../../../admin/src/utils/axiosReq';
 import parser from 'html-react-parser';
 import './PracticeAreaPage.scss'
+import { axiosReq } from '../utils/axiosReq';
 
 const practiceAreasPage = () => {
   const { isLoading, error, data } = useQuery({
