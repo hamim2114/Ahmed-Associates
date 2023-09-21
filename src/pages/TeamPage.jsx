@@ -18,7 +18,7 @@ const TeamPage = () => {
       viewport={{ once: true }}
       className="team-page">
       <span>Qualified Attorneys</span>
-      <h1>Our Expert Lowyers</h1>
+      <h1>MEMBERS OF ASSOCIATES</h1>
       <div className="wrapper">
         {
           isLoading ? 'Loading..' : error ? 'Something went wrong!' :
