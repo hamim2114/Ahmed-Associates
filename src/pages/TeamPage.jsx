@@ -20,15 +20,9 @@ const TeamPage = () => {
           isLoading ? 'Loading..' : error ? 'Something went wrong!' :
             teamData.length === 0 ? <h2 style={{ padding: '5rem', color: 'gray' }}>Team Empty.</h2> :
               teamData.map((data, i) => (
-                <motion.div
-                  key={i}
-                  transition={{ duration: 1, delay: i * .4 }}
-                  initial={{ y: 100, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  viewport={{ once: true }}
-                >
+                <div key={i}>
                   <Team data={data} key={i} />
-                </motion.div>
+                </div>
               ))
         }
       </div>
