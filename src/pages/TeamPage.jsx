@@ -11,11 +11,7 @@ const TeamPage = () => {
   });
 
   return (
-    <motion.div
-      transition={{ duration: 1 }}
-      initial={{ y: 100, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      viewport={{ once: true }}
+    <div
       className="team-page">
       <span>Qualified Attorneys</span>
       <h1>MEMBERS OF ASSOCIATES</h1>
@@ -36,7 +32,7 @@ const TeamPage = () => {
               ))
         }
       </div>
-    </motion.div>
+    </div>
   )
 }
 
