@@ -21,9 +21,9 @@ const Contact = () => {
               <div className="icon"><IoLocationSharp /></div>
               <div className="address">
                 <h3>Court Chamber:</h3>
-                <p>Room No. 409 (3rd Floor),
+                <p>Room # 409 (3rd Floor),
                   Annex Extension Building,
-                  Supreme Court Bar Association Building,
+                  Supreme Court Bar Association,
                   Dhaka-1000
                 </p>
               </div>
@@ -31,12 +31,10 @@ const Contact = () => {
             <div className="contact-sec">
               <div className="icon"><BsFillBuildingFill /></div>
               <div className="address">
-                <h3>Corporate Chamber: </h3>
-                <p>Suite No. 16, Level-7
-                  Kabbakos Super Market,
-                  Plot No. 3/D, Kawran Bazar,
-                  Tejgaon, Dhaka-1215.
-
+                <h3>Evening Chamber: </h3>
+                <p>Suit # 16, Level-07,
+                  Kabbokash Super Market,
+                  Plot # 3-D, Kawran Bazar,Dhaka - 1215.
                 </p>
               </div>
             </div>
@@ -46,7 +44,6 @@ const Contact = () => {
                 <h3>Phone</h3>
                 <p>+880255014178</p>
                 <p>+8801794876432</p>
-                <p>+8801732965736</p>
               </div>
             </div>
             <div className="contact-sec">

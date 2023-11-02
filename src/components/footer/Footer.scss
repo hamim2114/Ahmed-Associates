@@ -10,6 +10,7 @@
     padding: 2rem 1rem;
     &-top{
       @include flex();
+      align-items: flex-start;
       gap: 60px;
       color: #ffffffd8;
       @include mobile {
@@ -28,10 +29,16 @@
       .footer-links{
         display: flex;
         flex-direction: column;
+        align-items: center;
         flex: 1;
         gap: 5px;
-        h1{
+        @include mobile {
+          align-items: flex-start;
+        }
+        .h1{
           margin-bottom: 1rem;
+          @include font-play-fair;
+          font-size: 28px;
           @include mobile {
             margin-bottom: .5rem;
           }
@@ -50,8 +57,10 @@
         b{
           color: $color-yellow;
         }
-        h1{
+        .contact-h1{
           margin-bottom: 1rem;
+          @include font-play-fair;
+          font-size: 28px;
           @include mobile {
             margin-bottom: .5rem;
           }
