@@ -36,19 +36,19 @@
     }
   }
   .title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     @include font-play-fair;
     font-weight: bold;
     // max-width: 300px;
     // color: blue;
     @include tablet {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       padding: 5px 20px;
     }
     @include mobile {
       text-align: start;
-      font-size: 1rem;
+      font-size: 1.3rem;
       padding: 5px 5px;
     }
   }
